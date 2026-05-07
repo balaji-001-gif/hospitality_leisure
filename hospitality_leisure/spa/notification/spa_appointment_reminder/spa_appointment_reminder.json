@@ -8,7 +8,7 @@
  "event": "Days Before",
  "message": "Dear {{ doc.client_name }},\n\nYour {{ doc.treatment }} with {{ doc.therapist_name }} is today at {{ doc.start_time }}.\n\nPlease arrive 10 minutes early.\n\nSee you soon!",
  "modified": "2024-05-07 12:00:00.000000",
- "module": "Spa & Wellness",
+ "module": "Spa",
  "name": "Spa Appointment Reminder",
  "recipients": [
   {

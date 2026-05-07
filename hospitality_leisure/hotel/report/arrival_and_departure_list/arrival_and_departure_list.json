@@ -2,7 +2,7 @@
  "creation": "2024-05-07 12:00:00.000000",
  "doctype": "Report",
  "is_standard": "Yes",
- "module": "Hotel Management",
+ "module": "Hotel",
  "name": "Arrival and Departure List",
  "report_type": "Script Report",
  "ref_doctype": "Reservation"

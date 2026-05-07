@@ -7,7 +7,7 @@
  "event": "Submit",
  "message": "Dear {{ doc.client_name }},\n\nYour event \"{{ doc.event_name }}\" at {{ doc.venue_name }} on {{ doc.event_date }} is confirmed.\n\nDeposit Paid: {{ doc.currency }} {{ doc.deposit_amount }}.\n\nWe look forward to hosting your event!",
  "modified": "2024-05-07 12:00:00.000000",
- "module": "Events & Banquets",
+ "module": "Events",
  "name": "Event Booking Confirmation",
  "recipients": [
   {

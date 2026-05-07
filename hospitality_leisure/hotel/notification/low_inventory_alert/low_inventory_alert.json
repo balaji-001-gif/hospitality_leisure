@@ -7,7 +7,7 @@
  "event": "Value Change",
  "message": "Stock for {{ doc.item_code }} has fallen to {{ doc.actual_qty }}, below reorder level.\n\nPlease raise a Purchase Order to replenish stock.",
  "modified": "2024-05-07 12:00:00.000000",
- "module": "Hotel Management",
+ "module": "Hotel",
  "name": "Low Inventory Alert",
  "recipients": [
   {

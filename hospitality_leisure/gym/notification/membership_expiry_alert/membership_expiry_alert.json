@@ -9,7 +9,7 @@
  "event": "Days Before",
  "message": "Dear {{ doc.member_name }},\n\nYour {{ doc.plan_name }} membership expires on {{ doc.end_date }}.\n\nRenew now to continue enjoying unlimited access to our facilities.\n\nBest regards,\nGym Management",
  "modified": "2024-05-07 12:00:00.000000",
- "module": "Gym & Fitness",
+ "module": "Gym",
  "name": "Membership Expiry Alert",
  "recipients": [
   {

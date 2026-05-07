@@ -7,7 +7,7 @@
  "event": "Submit",
  "message": "Dear {{ doc.guest_name }},\n\nYour reservation {{ doc.name }} for {{ doc.room_type }} from {{ doc.check_in_date }} to {{ doc.check_out_date }} is confirmed.\n\nAmount: {{ doc.currency }} {{ doc.total_amount }}.\n\nWe look forward to welcoming you!",
  "modified": "2024-05-07 12:00:00.000000",
- "module": "Hotel Management",
+ "module": "Hotel",
  "name": "Reservation Confirmation",
  "recipients": [
   {

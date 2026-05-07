@@ -7,7 +7,7 @@
  "event": "Submit",
  "message": "Night audit for {{ doc.audit_date }} completed.\n\nTotal Revenue: {{ doc.total_revenue }}\nOccupancy: {{ doc.occupancy_rate }}%\n\nThe full audit report is attached to this email.",
  "modified": "2024-05-07 12:00:00.000000",
- "module": "Finance & Revenue",
+ "module": "Finance",
  "name": "Night Audit Completion",
  "recipients": [
   {
