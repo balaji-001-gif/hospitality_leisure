@@ -825,5 +825,5 @@ jobs:
 ---
 
 *HospitaLeisure ERP — Built with ❤️ on Frappe Framework v15*
-`;
+\`;
 }
