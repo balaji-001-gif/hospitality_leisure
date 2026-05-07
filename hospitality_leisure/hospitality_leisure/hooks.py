@@ -76,7 +76,7 @@ doctype_js = {
 # ------------
 
 # before_install = "hospitality_leisure.install.before_install"
-# after_install = "hospitality_leisure.setup.install.after_install"
+after_install = "hospitality_leisure.hospitality_leisure.setup.install.after_install"
 
 # Uninstallation
 # --------------
