@@ -9,13 +9,13 @@
  "field_order": [
   "class_name",
   "instructor",
-  "max_capacity",
+  "class_type",
   "column_break_4",
-  "class_date",
+  "schedule_date",
   "start_time",
-  "end_time",
-  "status",
-  "description"
+  "max_participants",
+  "enrolled",
+  "status"
  ],
  "fields": [
   {
@@ -32,44 +32,42 @@
    "options": "Employee"
   },
   {
-   "fieldname": "max_capacity",
-   "fieldtype": "Int",
-   "label": "Max Capacity",
-   "reqd": 1
+   "fieldname": "class_type",
+   "fieldtype": "Select",
+   "label": "Class Type",
+   "options": "Yoga\nZumba\nPilates\nCycling\nBoxing\nCrossfit\nSwimming"
   },
   {
    "fieldname": "column_break_4",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "class_date",
+   "fieldname": "schedule_date",
    "fieldtype": "Date",
-   "label": "Class Date",
-   "reqd": 1
+   "label": "Schedule Date"
   },
   {
    "fieldname": "start_time",
    "fieldtype": "Time",
-   "label": "Start Time",
-   "reqd": 1
+   "label": "Start Time"
   },
   {
-   "fieldname": "end_time",
-   "fieldtype": "Time",
-   "label": "End Time",
-   "reqd": 1
+   "fieldname": "max_participants",
+   "fieldtype": "Int",
+   "label": "Max Participants"
+  },
+  {
+   "fieldname": "enrolled",
+   "fieldtype": "Int",
+   "label": "Enrolled",
+   "read_only": 1
   },
   {
    "default": "Scheduled",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Scheduled\nCompleted\nCancelled"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "label": "Description"
+   "options": "Scheduled\nIn Progress\nCompleted\nCancelled"
   }
  ],
  "index_pages": [],

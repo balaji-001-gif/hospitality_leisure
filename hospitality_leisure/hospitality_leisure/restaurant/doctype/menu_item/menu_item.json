@@ -8,13 +8,16 @@
  "engine": "InnoDB",
  "field_order": [
   "item_name",
-  "item_code",
   "category",
+  "outlet",
+  "price",
   "column_break_3",
-  "rate",
+  "description",
+  "image",
   "is_veg",
-  "is_available",
-  "description"
+  "preparation_time",
+  "recipe",
+  "active"
  ],
  "fields": [
   {
@@ -25,43 +28,59 @@
    "unique": 1
   },
   {
-   "fieldname": "item_code",
+   "fieldname": "category",
    "fieldtype": "Link",
-   "label": "ERPNext Item",
-   "options": "Item"
+   "label": "Category",
+   "options": "Menu Category"
   },
   {
-   "fieldname": "category",
-   "fieldtype": "Select",
-   "label": "Category",
-   "options": "Appetizers\nMains\nDesserts\nBeverages\nAlcohol\nSides"
+   "fieldname": "outlet",
+   "fieldtype": "Link",
+   "label": "Outlet",
+   "options": "Restaurant Outlet"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_3",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "rate",
-   "fieldtype": "Currency",
-   "label": "Rate",
-   "reqd": 1
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   },
   {
    "default": "0",
    "fieldname": "is_veg",
    "fieldtype": "Check",
-   "label": "Is Vegetarian"
+   "label": "Vegetarian"
+  },
+  {
+   "fieldname": "preparation_time",
+   "fieldtype": "Int",
+   "label": "Prep Time (mins)"
+  },
+  {
+   "fieldname": "recipe",
+   "fieldtype": "Link",
+   "label": "Recipe",
+   "options": "Recipe"
   },
   {
    "default": "1",
-   "fieldname": "is_available",
+   "fieldname": "active",
    "fieldtype": "Check",
-   "label": "Is Available"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "label": "Description"
+   "label": "Active"
   }
  ],
  "index_pages": [],

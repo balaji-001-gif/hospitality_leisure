@@ -12,7 +12,8 @@
   "capacity",
   "column_break_3",
   "status",
-  "current_order"
+  "section",
+  "qr_code"
  ],
  "fields": [
   {
@@ -25,15 +26,13 @@
   {
    "fieldname": "outlet",
    "fieldtype": "Link",
-   "label": "Restaurant Outlet",
-   "options": "Restaurant Outlet",
-   "reqd": 1
+   "label": "Outlet",
+   "options": "Restaurant Outlet"
   },
   {
    "fieldname": "capacity",
    "fieldtype": "Int",
-   "label": "Capacity",
-   "reqd": 1
+   "label": "Capacity"
   },
   {
    "fieldname": "column_break_3",
@@ -44,15 +43,17 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Available\nOccupied\nReserved\nDirty",
-   "reqd": 1
+   "options": "Available\nOccupied\nReserved\nClosed"
   },
   {
-   "fieldname": "current_order",
-   "fieldtype": "Link",
-   "label": "Current Order",
-   "options": "Food Order",
-   "read_only": 1
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "Section"
+  },
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Attach Image",
+   "label": "QR Code"
   }
  ],
  "index_pages": [],

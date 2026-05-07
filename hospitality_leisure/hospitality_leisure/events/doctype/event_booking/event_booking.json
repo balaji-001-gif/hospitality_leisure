@@ -8,18 +8,21 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "customer",
-  "event_type",
+  "event_name",
+  "client",
   "venue",
-  "column_break_5",
+  "column_break_4",
   "event_date",
-  "start_time",
-  "end_time",
-  "status",
+  "event_type",
+  "expected_guests",
+  "catering_section",
+  "catering_required",
+  "av_required",
+  "package",
   "financial_section",
-  "total_amount",
-  "deposit_paid",
-  "balance_due",
+  "deposit_amount",
+  "total_value",
+  "status",
   "amended_from"
  ],
  "fields": [
@@ -30,27 +33,25 @@
    "options": "EVT-.YYYY.-"
   },
   {
-   "fieldname": "customer",
-   "fieldtype": "Link",
-   "label": "Customer",
-   "options": "Customer",
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "label": "Event Name",
    "reqd": 1
   },
   {
-   "fieldname": "event_type",
-   "fieldtype": "Select",
-   "label": "Event Type",
-   "options": "Wedding\nConference\nBirthday\nCorporate Meeting\nConcert\nExhibition"
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
   },
   {
    "fieldname": "venue",
    "fieldtype": "Link",
    "label": "Venue",
-   "options": "Event Venue",
-   "reqd": 1
+   "options": "Event Venue"
   },
   {
-   "fieldname": "column_break_5",
+   "fieldname": "column_break_4",
    "fieldtype": "Column Break"
   },
   {
@@ -60,21 +61,38 @@
    "reqd": 1
   },
   {
-   "fieldname": "start_time",
-   "fieldtype": "Time",
-   "label": "Start Time"
-  },
-  {
-   "fieldname": "end_time",
-   "fieldtype": "Time",
-   "label": "End Time"
-  },
-  {
-   "default": "Inquiry",
-   "fieldname": "status",
+   "fieldname": "event_type",
    "fieldtype": "Select",
-   "label": "Status",
-   "options": "Inquiry\nProposal Sent\nConfirmed\nCompleted\nCancelled"
+   "label": "Event Type",
+   "options": "Wedding\nConference\nBirthday\nCorporate\nGala\nCocktail"
+  },
+  {
+   "fieldname": "expected_guests",
+   "fieldtype": "Int",
+   "label": "Expected Guests"
+  },
+  {
+   "fieldname": "catering_section",
+   "fieldtype": "Section Break",
+   "label": "Catering & AV"
+  },
+  {
+   "default": "0",
+   "fieldname": "catering_required",
+   "fieldtype": "Check",
+   "label": "Catering Required"
+  },
+  {
+   "default": "0",
+   "fieldname": "av_required",
+   "fieldtype": "Check",
+   "label": "AV Required"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Event Package",
+   "options": "Event Package"
   },
   {
    "fieldname": "financial_section",
@@ -82,20 +100,21 @@
    "label": "Financials"
   },
   {
-   "fieldname": "total_amount",
+   "fieldname": "deposit_amount",
    "fieldtype": "Currency",
-   "label": "Total Amount"
+   "label": "Deposit Amount"
   },
   {
-   "fieldname": "deposit_paid",
+   "fieldname": "total_value",
    "fieldtype": "Currency",
-   "label": "Deposit Paid"
+   "label": "Total Value"
   },
   {
-   "fieldname": "balance_due",
-   "fieldtype": "Currency",
-   "label": "Balance Due",
-   "read_only": 1
+   "default": "Inquiry",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Inquiry\nProposal\nConfirmed\nCompleted\nCancelled"
   },
   {
    "fieldname": "amended_from",

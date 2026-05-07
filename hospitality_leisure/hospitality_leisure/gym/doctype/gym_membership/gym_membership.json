@@ -8,16 +8,15 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "guest_profile",
-  "membership_plan",
+  "member",
+  "plan",
   "column_break_4",
   "start_date",
   "end_date",
   "status",
-  "billing_section",
-  "is_posted_to_folio",
-  "guest_folio",
-  "total_amount",
+  "auto_renew",
+  "locker_number",
+  "monthly_fee",
   "amended_from"
  ],
  "fields": [
@@ -25,21 +24,20 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": "GYM-.YYYY.-"
+   "options": "MEM-.YYYY.-"
   },
   {
-   "fieldname": "guest_profile",
+   "fieldname": "member",
    "fieldtype": "Link",
-   "label": "Guest",
+   "label": "Member",
    "options": "Guest Profile",
    "reqd": 1
   },
   {
-   "fieldname": "membership_plan",
+   "fieldname": "plan",
    "fieldtype": "Link",
    "label": "Membership Plan",
-   "options": "Membership Plan",
-   "reqd": 1
+   "options": "Membership Plan"
   },
   {
    "fieldname": "column_break_4",
@@ -54,38 +52,30 @@
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
-   "label": "End Date",
-   "read_only": 1
+   "label": "End Date"
   },
   {
    "default": "Active",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Active\nExpired\nCancelled\nPaused"
-  },
-  {
-   "fieldname": "billing_section",
-   "fieldtype": "Section Break",
-   "label": "Billing"
+   "options": "Active\nExpired\nFrozen\nCancelled"
   },
   {
    "default": "0",
-   "fieldname": "is_posted_to_folio",
+   "fieldname": "auto_renew",
    "fieldtype": "Check",
-   "label": "Post to Guest Folio"
+   "label": "Auto Renew"
   },
   {
-   "fieldname": "guest_folio",
-   "fieldtype": "Link",
-   "label": "Guest Folio",
-   "options": "Guest Folio"
+   "fieldname": "locker_number",
+   "fieldtype": "Data",
+   "label": "Locker Number"
   },
   {
-   "fieldname": "total_amount",
+   "fieldname": "monthly_fee",
    "fieldtype": "Currency",
-   "label": "Total Amount",
-   "read_only": 1
+   "label": "Monthly Fee"
   },
   {
    "fieldname": "amended_from",

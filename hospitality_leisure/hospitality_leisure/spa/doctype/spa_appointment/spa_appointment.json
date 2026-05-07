@@ -8,19 +8,16 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "guest_profile",
-  "treatment_package",
+  "client",
+  "treatment",
   "therapist",
-  "spa_room",
+  "room",
   "column_break_6",
   "appointment_date",
   "start_time",
-  "end_time",
+  "duration",
   "status",
-  "billing_section",
-  "is_posted_to_folio",
-  "guest_folio",
-  "total_amount",
+  "amount",
   "amended_from"
  ],
  "fields": [
@@ -31,32 +28,28 @@
    "options": "SPA-.YYYY.-"
   },
   {
-   "fieldname": "guest_profile",
+   "fieldname": "client",
    "fieldtype": "Link",
-   "label": "Guest",
-   "options": "Guest Profile",
-   "reqd": 1
+   "label": "Client",
+   "options": "Guest Profile"
   },
   {
-   "fieldname": "treatment_package",
+   "fieldname": "treatment",
    "fieldtype": "Link",
-   "label": "Treatment Package",
-   "options": "Treatment Package",
-   "reqd": 1
+   "label": "Treatment",
+   "options": "Treatment Package"
   },
   {
    "fieldname": "therapist",
    "fieldtype": "Link",
    "label": "Therapist",
-   "options": "Therapist",
-   "reqd": 1
+   "options": "Therapist"
   },
   {
-   "fieldname": "spa_room",
+   "fieldname": "room",
    "fieldtype": "Link",
-   "label": "Spa Room",
-   "options": "Spa Room",
-   "reqd": 1
+   "label": "Treatment Room",
+   "options": "Spa Room"
   },
   {
    "fieldname": "column_break_6",
@@ -71,44 +64,24 @@
   {
    "fieldname": "start_time",
    "fieldtype": "Time",
-   "label": "Start Time",
-   "reqd": 1
+   "label": "Start Time"
   },
   {
-   "fieldname": "end_time",
-   "fieldtype": "Time",
-   "label": "End Time",
-   "read_only": 1
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "label": "Duration (mins)"
   },
   {
    "default": "Scheduled",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Scheduled\nConfirmed\nArrived\nCompleted\nCancelled\nNo-Show"
+   "options": "Scheduled\nConfirmed\nIn Progress\nCompleted\nCancelled"
   },
   {
-   "fieldname": "billing_section",
-   "fieldtype": "Section Break",
-   "label": "Billing"
-  },
-  {
-   "default": "0",
-   "fieldname": "is_posted_to_folio",
-   "fieldtype": "Check",
-   "label": "Post to Guest Folio"
-  },
-  {
-   "fieldname": "guest_folio",
-   "fieldtype": "Link",
-   "label": "Guest Folio",
-   "options": "Guest Folio"
-  },
-  {
-   "fieldname": "total_amount",
+   "fieldname": "amount",
    "fieldtype": "Currency",
-   "label": "Total Amount",
-   "read_only": 1
+   "label": "Amount"
   },
   {
    "fieldname": "amended_from",

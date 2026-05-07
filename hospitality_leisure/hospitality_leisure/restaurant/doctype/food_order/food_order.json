@@ -8,19 +8,14 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "outlet",
-  "table_no",
+  "table",
+  "waiter",
+  "order_type",
   "column_break_4",
-  "guest_count",
-  "order_status",
-  "customer_details_section",
-  "is_guest_folio_order",
-  "guest_folio",
-  "customer",
-  "items_section",
   "items",
-  "totals_section",
-  "total_amount",
+  "status",
+  "kitchen_notes",
+  "total",
   "amended_from"
  ],
  "fields": [
@@ -31,78 +26,49 @@
    "options": "ORD-.YYYY.-"
   },
   {
-   "fieldname": "outlet",
-   "fieldtype": "Link",
-   "label": "Restaurant Outlet",
-   "options": "Restaurant Outlet",
-   "reqd": 1
-  },
-  {
-   "fieldname": "table_no",
+   "fieldname": "table",
    "fieldtype": "Link",
    "label": "Table",
    "options": "Restaurant Table"
+  },
+  {
+   "fieldname": "waiter",
+   "fieldtype": "Link",
+   "label": "Waiter",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "label": "Order Type",
+   "options": "Dine-in\nTakeaway\nDelivery\nRoom Service"
   },
   {
    "fieldname": "column_break_4",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "guest_count",
-   "fieldtype": "Int",
-   "label": "Guest Count"
-  },
-  {
-   "default": "Open",
-   "fieldname": "order_status",
-   "fieldtype": "Select",
-   "label": "Order Status",
-   "options": "Open\nIn Preparation\nServed\nCompleted\nCancelled"
-  },
-  {
-   "fieldname": "customer_details_section",
-   "fieldtype": "Section Break",
-   "label": "Customer Details"
-  },
-  {
-   "default": "0",
-   "fieldname": "is_guest_folio_order",
-   "fieldtype": "Check",
-   "label": "Post to Guest Folio"
-  },
-  {
-   "fieldname": "guest_folio",
-   "fieldtype": "Link",
-   "label": "Guest Folio",
-   "options": "Guest Folio"
-  },
-  {
-   "fieldname": "customer",
-   "fieldtype": "Link",
-   "label": "Customer",
-   "options": "Customer"
-  },
-  {
-   "fieldname": "items_section",
-   "fieldtype": "Section Break",
-   "label": "Items"
-  },
-  {
    "fieldname": "items",
    "fieldtype": "Table",
    "label": "Items",
-   "options": "Food Order Item",
-   "reqd": 1
+   "options": "Food Order Item"
   },
   {
-   "fieldname": "totals_section",
-   "fieldtype": "Section Break",
-   "label": "Totals"
+   "default": "Ordered",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Ordered\nPreparing\nReady\nServed\nBilled\nCancelled"
   },
   {
-   "fieldname": "total_amount",
+   "fieldname": "kitchen_notes",
+   "fieldtype": "Small Text",
+   "label": "Kitchen Notes"
+  },
+  {
+   "fieldname": "total",
    "fieldtype": "Currency",
-   "label": "Total Amount",
+   "label": "Total",
    "read_only": 1
   },
   {
