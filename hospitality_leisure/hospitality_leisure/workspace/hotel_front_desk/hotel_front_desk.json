@@ -1,0 +1,58 @@
+{
+ "charts": [],
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "Workspace",
+ "icon": "hotel",
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Hotel Front Desk",
+ "links": [
+  {
+   "label": "Reservations",
+   "link_type": "DocType",
+   "link_to": "Reservation",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "label": "Rooms",
+   "link_type": "DocType",
+   "link_to": "Room",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "label": "Guest Profiles",
+   "link_type": "DocType",
+   "link_to": "Guest Profile",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "label": "Guest Folios",
+   "link_type": "DocType",
+   "link_to": "Guest Folio",
+   "onboard": 1,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-05-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hotel Management",
+ "name": "Hotel Front Desk",
+ "owner": "Administrator",
+ "public": 1,
+ "roles": [],
+ "shortcuts": [
+  {
+   "label": "New Reservation",
+   "link_to": "Reservation",
+   "type": "DocType"
+  },
+  {
+   "label": "Room Status Board",
+   "link_to": "Room",
+   "type": "DocType"
+  }
+ ]
+}

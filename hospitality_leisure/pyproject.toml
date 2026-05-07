@@ -1,0 +1,15 @@
+[project]
+name = "hospitality_leisure"
+authors = [
+    { name = "Your Organization", email = "support@yourorg.com" }
+]
+description = "Complete Hospitality and Leisure ERP Solution"
+requires-python = ">=3.10"
+dependencies = [
+    "frappe",
+    "erpnext"
+]
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
