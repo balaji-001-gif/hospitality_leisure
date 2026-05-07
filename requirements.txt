@@ -1,2 +1,1 @@
-frappe
-erpnext
+# Dependencies are managed by bench
