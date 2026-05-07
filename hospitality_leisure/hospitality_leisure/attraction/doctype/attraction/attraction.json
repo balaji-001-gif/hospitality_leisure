@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:attraction_name",
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attraction_name",
+  "attraction_type",
+  "property",
+  "column_break_4",
+  "opening_time",
+  "closing_time",
+  "is_active",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "attraction_name",
+   "fieldtype": "Data",
+   "label": "Attraction Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "attraction_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Theme Park\nWater Park\nZoo\nMuseum\nHistorical Site\nOther"
+  },
+  {
+   "fieldname": "property",
+   "fieldtype": "Link",
+   "label": "Property",
+   "options": "Property"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "opening_time",
+   "fieldtype": "Time",
+   "label": "Opening Time"
+  },
+  {
+   "fieldname": "closing_time",
+   "fieldtype": "Time",
+   "label": "Closing Time"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_pages": [],
+ "links": [],
+ "modified": "2024-05-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Attraction Management",
+ "name": "Attraction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:cabin_number",
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cabin_number",
+  "cabin_type",
+  "deck",
+  "column_break_4",
+  "status",
+  "base_rate",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "cabin_number",
+   "fieldtype": "Data",
+   "label": "Cabin Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "cabin_type",
+   "fieldtype": "Select",
+   "label": "Cabin Type",
+   "options": "Inside\nOcean View\nBalcony\nSuite\nRoyal Suite"
+  },
+  {
+   "fieldname": "deck",
+   "fieldtype": "Int",
+   "label": "Deck Number"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Available",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nOccupied\nMaintenance\nDirty"
+  },
+  {
+   "fieldname": "base_rate",
+   "fieldtype": "Currency",
+   "label": "Base Rate (Nightly)"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  }
+ ],
+ "index_pages": [],
+ "links": [],
+ "modified": "2024-05-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Cruise Operations",
+ "name": "Cabin",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

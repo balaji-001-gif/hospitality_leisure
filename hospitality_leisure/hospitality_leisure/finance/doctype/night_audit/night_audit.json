@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "property",
+  "audit_date",
+  "status",
+  "column_break_4",
+  "total_rooms_occupied",
+  "total_rooms_available",
+  "occupancy_rate",
+  "revenue_section",
+  "room_revenue",
+  "fb_revenue",
+  "other_revenue",
+  "column_break_11",
+  "total_revenue",
+  "total_collections",
+  "closing_balance",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "property",
+   "fieldtype": "Link",
+   "label": "Property",
+   "options": "Property",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "audit_date",
+   "fieldtype": "Date",
+   "label": "Audit Date",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_rooms_occupied",
+   "fieldtype": "Int",
+   "label": "Rooms Occupied"
+  },
+  {
+   "fieldname": "total_rooms_available",
+   "fieldtype": "Int",
+   "label": "Rooms Available"
+  },
+  {
+   "fieldname": "occupancy_rate",
+   "fieldtype": "Percent",
+   "label": "Occupancy Rate"
+  },
+  {
+   "fieldname": "revenue_section",
+   "fieldtype": "Section Break",
+   "label": "Revenue Summary"
+  },
+  {
+   "fieldname": "room_revenue",
+   "fieldtype": "Currency",
+   "label": "Room Revenue"
+  },
+  {
+   "fieldname": "fb_revenue",
+   "fieldtype": "Currency",
+   "label": "F&B Revenue"
+  },
+  {
+   "fieldname": "other_revenue",
+   "fieldtype": "Currency",
+   "label": "Other Revenue"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_revenue",
+   "fieldtype": "Currency",
+   "label": "Total Revenue",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_collections",
+   "fieldtype": "Currency",
+   "label": "Total Collections"
+  },
+  {
+   "fieldname": "closing_balance",
+   "fieldtype": "Currency",
+   "label": "Closing Balance"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Night Audit",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_pages": [],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Finance & Revenue",
+ "name": "Night Audit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:berth_number",
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "berth_number",
+  "berth_type",
+  "property",
+  "column_break_4",
+  "max_length_m",
+  "status",
+  "base_rate",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "berth_number",
+   "fieldtype": "Data",
+   "label": "Berth Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "berth_type",
+   "fieldtype": "Select",
+   "label": "Berth Type",
+   "options": "Wet Slip\nDry Storage\nMooring\nCatamaran Slip"
+  },
+  {
+   "fieldname": "property",
+   "fieldtype": "Link",
+   "label": "Property",
+   "options": "Property",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "max_length_m",
+   "fieldtype": "Float",
+   "label": "Max Length (m)"
+  },
+  {
+   "default": "Available",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nOccupied\nMaintenance\nReserved"
+  },
+  {
+   "fieldname": "base_rate",
+   "fieldtype": "Currency",
+   "label": "Base Rate (Daily)"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  }
+ ],
+ "index_pages": [],
+ "links": [],
+ "modified": "2024-05-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Marina Management",
+ "name": "Berth",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

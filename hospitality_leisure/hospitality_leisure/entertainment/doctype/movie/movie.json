@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:movie_name",
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "movie_name",
+  "genre",
+  "duration_mins",
+  "column_break_4",
+  "rating",
+  "release_date",
+  "language",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "movie_name",
+   "fieldtype": "Data",
+   "label": "Movie Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "genre",
+   "fieldtype": "Select",
+   "label": "Genre",
+   "options": "Action\nComedy\nDrama\nHorror\nSci-Fi\nAnimation\nThriller"
+  },
+  {
+   "fieldname": "duration_mins",
+   "fieldtype": "Int",
+   "label": "Duration (Minutes)"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Select",
+   "label": "Rating",
+   "options": "G\nPG\nPG-13\nR\nNC-17"
+  },
+  {
+   "fieldname": "release_date",
+   "fieldtype": "Date",
+   "label": "Release Date"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Data",
+   "label": "Language"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_pages": [],
+ "links": [],
+ "modified": "2024-05-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Entertainment Management",
+ "name": "Movie",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
