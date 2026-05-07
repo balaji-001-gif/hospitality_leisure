@@ -5,6 +5,7 @@ authors = [
 ]
 description = "Complete Hospitality and Leisure ERP Solution"
 requires-python = ">=3.10"
+version = "1.0.0"
 dependencies = [
     "frappe",
     "erpnext"
