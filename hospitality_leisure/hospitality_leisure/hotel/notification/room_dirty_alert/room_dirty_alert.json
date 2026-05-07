@@ -1,0 +1,20 @@
+{
+ "channel": "Email",
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "Notification",
+ "document_type": "Room",
+ "enabled": 1,
+ "event": "Value Change",
+ "message": "Room {{ doc.room_number }} ({{ doc.room_type }}) has been marked as Dirty.\n\nPlease assign a housekeeper to attend to this room immediately.",
+ "modified": "2024-05-07 12:00:00.000000",
+ "module": "Hotel Management",
+ "name": "Room Dirty Alert",
+ "recipients": [
+  {
+   "condition": "doc.status == 'Dirty'",
+   "receiver_by_role": "Housekeeping Supervisor"
+  }
+ ],
+ "subject": "Room {{ doc.room_number }} Needs Cleaning",
+ "value_changed": "status"
+}

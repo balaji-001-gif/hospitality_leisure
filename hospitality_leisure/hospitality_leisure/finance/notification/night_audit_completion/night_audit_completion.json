@@ -1,0 +1,21 @@
+{
+ "channel": "Email",
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "Notification",
+ "document_type": "Night Audit",
+ "enabled": 1,
+ "event": "Submit",
+ "message": "Night audit for {{ doc.audit_date }} completed.\n\nTotal Revenue: {{ doc.total_revenue }}\nOccupancy: {{ doc.occupancy_rate }}%\n\nThe full audit report is attached to this email.",
+ "modified": "2024-05-07 12:00:00.000000",
+ "module": "Finance & Revenue",
+ "name": "Night Audit Completion",
+ "recipients": [
+  {
+   "receiver_by_role": "Hotel Manager"
+  },
+  {
+   "receiver_by_role": "Finance Manager"
+  }
+ ],
+ "subject": "Night Audit Complete for {{ doc.audit_date }}"
+}

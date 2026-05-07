@@ -1,0 +1,18 @@
+{
+ "channel": "Email",
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "Notification",
+ "document_type": "Reservation",
+ "enabled": 1,
+ "event": "Submit",
+ "message": "Dear {{ doc.guest_name }},\n\nYour reservation {{ doc.name }} for {{ doc.room_type }} from {{ doc.check_in_date }} to {{ doc.check_out_date }} is confirmed.\n\nAmount: {{ doc.currency }} {{ doc.total_amount }}.\n\nWe look forward to welcoming you!",
+ "modified": "2024-05-07 12:00:00.000000",
+ "module": "Hotel Management",
+ "name": "Reservation Confirmation",
+ "recipients": [
+  {
+   "receiver_by_document_field": "guest"
+  }
+ ],
+ "subject": "Your Reservation at {{ doc.property_name }} is Confirmed!"
+}

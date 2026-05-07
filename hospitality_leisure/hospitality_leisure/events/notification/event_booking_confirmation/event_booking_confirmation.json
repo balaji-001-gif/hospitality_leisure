@@ -1,0 +1,21 @@
+{
+ "channel": "Email",
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "Notification",
+ "document_type": "Event Booking",
+ "enabled": 1,
+ "event": "Submit",
+ "message": "Dear {{ doc.client_name }},\n\nYour event \"{{ doc.event_name }}\" at {{ doc.venue_name }} on {{ doc.event_date }} is confirmed.\n\nDeposit Paid: {{ doc.currency }} {{ doc.deposit_amount }}.\n\nWe look forward to hosting your event!",
+ "modified": "2024-05-07 12:00:00.000000",
+ "module": "Events & Banquets",
+ "name": "Event Booking Confirmation",
+ "recipients": [
+  {
+   "receiver_by_document_field": "client"
+  },
+  {
+   "receiver_by_role": "Events Manager"
+  }
+ ],
+ "subject": "Event Booking Confirmed: {{ doc.event_name }}"
+}

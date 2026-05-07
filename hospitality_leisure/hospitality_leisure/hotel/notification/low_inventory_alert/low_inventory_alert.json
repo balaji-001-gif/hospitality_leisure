@@ -1,0 +1,20 @@
+{
+ "channel": "Email",
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "Notification",
+ "document_type": "Bin",
+ "enabled": 1,
+ "event": "Value Change",
+ "message": "Stock for {{ doc.item_code }} has fallen to {{ doc.actual_qty }}, below reorder level.\n\nPlease raise a Purchase Order to replenish stock.",
+ "modified": "2024-05-07 12:00:00.000000",
+ "module": "Hotel Management",
+ "name": "Low Inventory Alert",
+ "recipients": [
+  {
+   "condition": "doc.actual_qty < doc.reserved_qty",
+   "receiver_by_role": "Purchasing Manager"
+  }
+ ],
+ "subject": "Low Stock Alert: {{ doc.item_code }}",
+ "value_changed": "actual_qty"
+}

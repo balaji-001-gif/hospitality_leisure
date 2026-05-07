@@ -1,0 +1,20 @@
+{
+ "channel": "Email",
+ "creation": "2024-05-07 12:00:00.000000",
+ "date_changed": "end_date",
+ "days_before_half_day": 7,
+ "doctype": "Notification",
+ "document_type": "Gym Membership",
+ "enabled": 1,
+ "event": "Days Before",
+ "message": "Dear {{ doc.member_name }},\n\nYour {{ doc.plan_name }} membership expires on {{ doc.end_date }}.\n\nRenew now to continue enjoying unlimited access to our facilities.\n\nBest regards,\nGym Management",
+ "modified": "2024-05-07 12:00:00.000000",
+ "module": "Gym & Fitness",
+ "name": "Membership Expiry Alert",
+ "recipients": [
+  {
+   "receiver_by_document_field": "member"
+  }
+ ],
+ "subject": "Your Gym Membership Expires in 7 Days"
+}

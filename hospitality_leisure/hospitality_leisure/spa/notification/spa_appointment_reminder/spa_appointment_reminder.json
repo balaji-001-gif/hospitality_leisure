@@ -1,0 +1,22 @@
+{
+ "channel": "Email",
+ "creation": "2024-05-07 12:00:00.000000",
+ "date_changed": "appointment_date",
+ "doctype": "Notification",
+ "document_type": "Spa Appointment",
+ "enabled": 1,
+ "event": "Days Before",
+ "message": "Dear {{ doc.client_name }},\n\nYour {{ doc.treatment }} with {{ doc.therapist_name }} is today at {{ doc.start_time }}.\n\nPlease arrive 10 minutes early.\n\nSee you soon!",
+ "modified": "2024-05-07 12:00:00.000000",
+ "module": "Spa & Wellness",
+ "name": "Spa Appointment Reminder",
+ "recipients": [
+  {
+   "receiver_by_document_field": "client"
+  },
+  {
+   "receiver_by_document_field": "therapist"
+  }
+ ],
+ "subject": "Your Spa Appointment Today"
+}

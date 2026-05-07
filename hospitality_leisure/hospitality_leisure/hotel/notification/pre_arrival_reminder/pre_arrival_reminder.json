@@ -1,0 +1,20 @@
+{
+ "channel": "Email",
+ "creation": "2024-05-07 12:00:00.000000",
+ "date_changed": "check_in_date",
+ "days_before_half_day": 1,
+ "doctype": "Notification",
+ "document_type": "Reservation",
+ "enabled": 1,
+ "event": "Days Before",
+ "message": "Dear {{ doc.guest_name }},\n\nWe look forward to welcoming you tomorrow.\n\nCheck-in time is {{ doc.check_in_time }}.\nPlease let us know your ETA.\n\nSee you soon!",
+ "modified": "2024-05-07 12:00:00.000000",
+ "module": "Hotel Management",
+ "name": "Pre-Arrival Reminder",
+ "recipients": [
+  {
+   "receiver_by_document_field": "guest"
+  }
+ ],
+ "subject": "Your stay at {{ doc.property_name }} is Tomorrow!"
+}
