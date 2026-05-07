@@ -1,13 +1,13 @@
-Hotel Management
-Restaurant Management
-Spa & Wellness
-Gym & Fitness
-Events & Banquets
+Hotel
+Restaurant
+Spa
+Gym
+Events
 Hospitality Setup
-Finance & Revenue
-Attraction Management
-Entertainment Management
-Campsite Management
-Marina Management
-Cruise Operations
-Sports Management
+Finance
+Attraction
+Entertainment
+Campsite
+Marina
+Cruise
+Sports
