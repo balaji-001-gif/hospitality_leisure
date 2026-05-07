@@ -1,0 +1,10 @@
+{
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "Report",
+ "is_standard": "Yes",
+ "module": "Hotel Management",
+ "name": "In-House Guest List",
+ "report_type": "Query Report",
+ "ref_doctype": "Reservation",
+ "query": "SELECT room, guest as guest_name, check_in_date, status FROM `tabReservation` WHERE status = 'Checked In'"
+}

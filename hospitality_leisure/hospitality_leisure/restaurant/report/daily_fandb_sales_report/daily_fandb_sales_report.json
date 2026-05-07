@@ -1,0 +1,9 @@
+{
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "Report",
+ "is_standard": "Yes",
+ "module": "Restaurant Management",
+ "name": "Daily FandB Sales Report",
+ "report_type": "Script Report",
+ "ref_doctype": "Food Order"
+}

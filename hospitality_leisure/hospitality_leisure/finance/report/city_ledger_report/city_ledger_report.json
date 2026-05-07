@@ -1,0 +1,9 @@
+{
+ "creation": "2024-05-07 12:00:00.000000",
+ "doctype": "Report",
+ "is_standard": "Yes",
+ "module": "Finance & Revenue",
+ "name": "City Ledger Report",
+ "report_type": "Script Report",
+ "ref_doctype": "Guest Folio"
+}
